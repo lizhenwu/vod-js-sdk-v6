@@ -193,7 +193,8 @@
               videoUrl: '',
               cancel: function() {
                 uploaderInfo.isVideoUploadCancel = true;
-                uploader.cancel()
+                uploader.cancel();
+                self.$refs.vExample.reset();
               },
             }
 
